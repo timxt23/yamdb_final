@@ -9,11 +9,11 @@ services:
       - ./.env
   web:
     container_name: web
-    image: timxt/yamdb:1.1
+    image: timxt/yamdb:1.2
     restart: always
     volumes:
-      - static_value:/api_yamdb/static/
-      - media_value:/api_yamdb/media/
+      - static_value:/app/static/
+      - media_value:/app/media/
     depends_on:
       - db
     env_file:
