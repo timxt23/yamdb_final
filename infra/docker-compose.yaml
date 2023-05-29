@@ -9,7 +9,7 @@ services:
       - ./.env
   web:
     container_name: web
-    image: timxt/yamdb:1.2
+    image: timxt/yamdb:1.4
     restart: always
     volumes:
       - static_value:/app/static/
