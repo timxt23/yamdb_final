@@ -9,7 +9,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = '546939222'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['84.201.157.246', 'localhost', '127.0.0.1']
 
@@ -64,7 +64,7 @@ WSGI_APPLICATION = 'api_yamdb.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': os.getenv('DB_ENGINE', default='django.db.backends.postgresql'),
-        'NAME': os.getenv('POSTGRES_DB', default='yatube'),
+        'NAME': os.getenv('POSTGRES_DB', default='yatube_user'),
         'USER': os.getenv('POSTGRES_USER', default='yatube_user'),
         'PASSWORD': os.getenv('POSTGRES_PASSWORD', default='xxxyyyzzz'),
         'HOST': os.getenv('DB_HOST', default='db'),
